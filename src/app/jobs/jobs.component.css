@@ -1,0 +1,16 @@
+/*
+ * jobs.component.css
+ * ReallyBigData
+ *
+ * Created by Ian Cordero on 11/16/17.
+ *
+ */
+
+section {
+}
+
+job {
+    display: inline-block;
+    margin-right: 0.2rem;
+    margin-bottom: 0.2rem;
+}

@@ -1,0 +1,45 @@
+/*
+ * job.component.css
+ * ReallyBigData
+ *
+ * Created by Ian Cordero on 11/16/17.
+ *
+ */
+
+:host {
+    background-color: lightsteelblue;
+    border: 0;
+    border-radius: 1rem;
+    padding: 0.5rem;
+}
+
+    :host:hover {
+        background-color: steelblue;
+        color: snow;
+        transition: 0.2s;
+    }
+
+.progress {
+    width: 100%;
+    text-align: center;
+}
+
+.actions {
+    width: 100%;
+    display: flex;
+}
+
+    button.actionBtn {
+        flex: 1;
+        padding: 0.2rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+.rotatingIcon {
+    animation: spin 1s linear infinite;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }

@@ -1,0 +1,67 @@
+/*
+ * app.component.css
+ * ReallyBigData
+ *
+ * Created by Ian Cordero on 11/16/17.
+ *
+ */
+
+h1 {
+    margin: 0.5rem 0;
+    color: lightslategrey;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+nav {
+    background-color: gainsboro;
+    height: 30px;
+    padding: 0.3rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul > li {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav a {
+        display: block;
+        padding: 0.3rem;
+        text-decoration: none;
+        color: lightslategrey;
+        border-radius: 5px;
+    }
+
+        nav a:hover {
+            background-color: azure;
+            transition: 0.2s;
+        }
+
+section.view {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 0.5rem;
+    overflow: auto;
+}
+
+footer {
+    height: 30px;
+    font-size: 0.9rem;
+    background-color: slategrey;
+    color: snow;
+    padding: 0.3rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
