@@ -12,6 +12,7 @@ import { AppComponent } from "./app.component";
 import { RouterModule } from "@angular/router";
 import { JobsComponent } from "./jobs/jobs.component";
 import { JobComponent } from "./jobs/job/job.component";
+import { JobsService } from "./jobs/service/jobs.service";
 
 @NgModule({
     imports: [
@@ -27,6 +28,9 @@ import { JobComponent } from "./jobs/job/job.component";
         JobsComponent,
         JobComponent,
         AppComponent
+    ],
+    providers: [
+        JobsService
     ],
     bootstrap: [ AppComponent ]
 })

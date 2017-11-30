@@ -7,6 +7,7 @@
 //
 
 import { Component, OnInit } from "@angular/core";
+import { JobsService } from "./service/jobs.service";
 
 @Component({
     selector: 'jobs',
@@ -14,10 +15,19 @@ import { Component, OnInit } from "@angular/core";
     styleUrls: [ './jobs.component.css' ]
 })
 export class JobsComponent implements OnInit {
-    constructor() {}
+    infoGeneral: string;
+
+    constructor(
+        private jobsService: JobsService
+    ) {}
 
     ngOnInit() {
         console.log("JobsComponent init");
+
+        this.jobsService.fetchInfo('general')
+            .subscribe(info => {
+                this.infoGeneral = info;
+            });
     }
 
     /**

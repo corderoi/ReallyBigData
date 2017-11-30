@@ -10,9 +10,11 @@
     Browse and control running jobs here.
 </p>
 <section>
-    <job></job>
+    <job [info]="infoGeneral"
+         (jobDidStop)="jobDidStop()"></job>
     <job title="Update Conflicts Indices"></job>
-    <job title="Calculate Total Pizza Consumption (Canada)"></job>
+    <job title="Calculate Total Pizza Consumption (Canada)"
+         name="pizza"></job>
     <job title="Digits of Pi"></job>
     <job title="Prove P = NP"></job>
 </section>
